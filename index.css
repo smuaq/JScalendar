@@ -1,0 +1,15 @@
+.unselectable {
+    color: #dedede;
+    cursor: not-allowed;
+}
+
+.selectedDate {
+    background-color: #eb5757;
+    color: #fff;
+}
+
+.table td, .table th {
+    text-align: center;
+    border-top: none !important;
+    border-bottom: none !important;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+	<input type="checkbox" id="Sun" onclick="highlightColumn(event.srcElement.checked,0)"><label for="Sun">Sun</label><br>
+	<input type="checkbox" id="Mon" onclick="highlightColumn(event.srcElement.checked,1)"><label for="Mon">Mon</label><br>
+	<input type="checkbox" id="Tue" onclick="highlightColumn(event.srcElement.checked,2)"><label for="Tue">Tue</label><br>
+	<input type="checkbox" id="Wed" onclick="highlightColumn(event.srcElement.checked,3)"><label for="Wed">Wed</label><br>
+	<input type="checkbox" id="Thu" onclick="highlightColumn(event.srcElement.checked,4)"><label for="Thu">Thu</label><br>
+	<input type="checkbox" id="Fri" onclick="highlightColumn(event.srcElement.checked,5)"><label for="Fri">Fri</label><br>
+	<input type="checkbox" id="Sat" onclick="highlightColumn(event.srcElement.checked,6)"><label for="Sat">Sat</label><br>
+</div>
+<div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+    <div class="card">
+        <h3 class="card-header" id="monthAndYear"></h3>
+        <table class="table table-responsive-sm" id="calendar">
+            <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+        <div class="form-inline">
+            <button class="btn btn-outline-primary btn-sm col-sm-4" onclick="previous()">Previous</button>
+            <button class="btn btn-outline-primary btn-sm col-sm-4" onclick="next()">Next</button>
+			<button class="btn btn-outline-primary btn-sm  col-sm-4" onclick="showSelectedDates()">Show Selected Dates</button>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

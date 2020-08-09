@@ -13,3 +13,8 @@
     border-top: none !important;
     border-bottom: none !important;
 }
+
+.week-days > label {
+    margin-right: 40px;
+    margin-left: 20px;
+}

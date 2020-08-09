@@ -29,7 +29,6 @@ function preSelectedData(){
         { Value: "2020-08-16" },
         { Value: "2020-08-17" },
     ];
-    console.log(data);
     let tbl = document.getElementById("calendar-body");
     let rows = tbl.getElementsByTagName("tr");
     let sz = rows.length;

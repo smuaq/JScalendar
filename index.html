@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
-	<input type="checkbox" id="Sun" onclick="highlightColumn(event.srcElement.checked,0)"><label for="Sun">Sun</label><br>
-	<input type="checkbox" id="Mon" onclick="highlightColumn(event.srcElement.checked,1)"><label for="Mon">Mon</label><br>
-	<input type="checkbox" id="Tue" onclick="highlightColumn(event.srcElement.checked,2)"><label for="Tue">Tue</label><br>
-	<input type="checkbox" id="Wed" onclick="highlightColumn(event.srcElement.checked,3)"><label for="Wed">Wed</label><br>
-	<input type="checkbox" id="Thu" onclick="highlightColumn(event.srcElement.checked,4)"><label for="Thu">Thu</label><br>
-	<input type="checkbox" id="Fri" onclick="highlightColumn(event.srcElement.checked,5)"><label for="Fri">Fri</label><br>
-	<input type="checkbox" id="Sat" onclick="highlightColumn(event.srcElement.checked,6)"><label for="Sat">Sat</label><br>
+<div class="container col-sm-4 col-md-7 col-lg-4 mt-5 week-days">
+	<input type="checkbox" id="Sun" onclick="highlightColumn(event.srcElement.checked,0)"><label for="Sun">Sun</label>
+	<input type="checkbox" id="Mon" onclick="highlightColumn(event.srcElement.checked,1)"><label for="Mon">Mon</label>
+	<input type="checkbox" id="Tue" onclick="highlightColumn(event.srcElement.checked,2)"><label for="Tue">Tue</label>
+    <input type="checkbox" id="Wed" onclick="highlightColumn(event.srcElement.checked,3)"><label for="Wed">Wed</label>
+    <input type="checkbox" id="Thu" onclick="highlightColumn(event.srcElement.checked,4)"><label for="Thu">Thu</label>
+    <input type="checkbox" id="Fri" onclick="highlightColumn(event.srcElement.checked,5)"><label for="Fri">Fri</label>
+    <input type="checkbox" id="Sat" onclick="highlightColumn(event.srcElement.checked,6)"><label for="Sat">Sat</label>
 </div>
 <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
     <div class="card">
@@ -35,9 +35,13 @@
             <tbody id="calendar-body"></tbody>
         </table>
         <div class="form-inline">
-            <button class="btn btn-outline-primary btn-sm col-sm-4" onclick="previous()">Previous</button>
-            <button class="btn btn-outline-primary btn-sm col-sm-4" onclick="next()">Next</button>
-			<button class="btn btn-outline-primary btn-sm  col-sm-4" onclick="showSelectedDates()">Show Selected Dates</button>
+            <button class="btn btn-outline-primary btn-sm col-sm-6" onclick="previous()">Previous</button>
+            <button class="btn btn-outline-primary btn-sm col-sm-6" onclick="next()">Next</button>
+        </div>
+        <br>
+        <div class="form-inline">
+            <button class="btn btn-outline-primary btn-sm  col-sm-6" onclick="showSelectedDates()">Show Selected Dates</button>
+            <button class="btn btn-outline-primary btn-sm  col-sm-6" onclick="preSelectedData()">Pre-Populate Data</button>
         </div>
     </div>
 </div>
